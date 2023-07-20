@@ -1,0 +1,66 @@
++*In[4]:*+
+[source, ipython3]
+----
+#Import pandas by typing the following code in the notebook and run it by pressing shift
+import pandas as pd
+----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+import numpy as np
+data=pd.Series(np.array([1,2,3,4,5]))
+data
+----
+
+
++*Out[6]:*+
+----0    1
+1    2
+2    3
+3    4
+4    5
+dtype: int64----
+
+
++*In[9]:*+
+[source, ipython3]
+----
+#code to create a pandas series using np.array with custom index
+data=pd.Series(np.array([1,2,3,4,5]),index=['a','b','c','d','e'])
+data
+----
+
+
++*Out[9]:*+
+----a    1
+b    2
+c    3
+d    4
+e    5
+dtype: int64----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+#code to create a pandas series using a dictionary with default index.
+
+dict1=pd.Series({'X':1,'Y':2,'Z':3})
+dict1
+----
+
+
++*Out[10]:*+
+----X    1
+Y    2
+Z    3
+dtype: int64----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
